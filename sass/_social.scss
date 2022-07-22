@@ -1,0 +1,33 @@
+.social {
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 1;
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  @media only screen and (max-width: 56.25em) {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2rem;
+  }
+  &__icon-box {
+    // display: inline-block;
+    width: 3.5rem;
+    height: 3.5rem;
+    fill: #fff;
+
+    cursor: pointer;
+    transition: all 0.2s;
+    &:not(:first-child) {
+      margin-left: 2.5rem;
+    }
+  }
+
+  &__icon-box:hover {
+    fill: $color-magneta;
+  }
+}

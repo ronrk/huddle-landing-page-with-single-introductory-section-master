@@ -1,0 +1,45 @@
+.info {
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media only screen and (max-width: 56.25em) {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    text-align: center;
+    padding: 2rem 10rem;
+  }
+  &__text {
+    font-size: 1.8rem;
+    font-family: $font-display;
+    font-weight: 400;
+    padding: 2rem 0;
+    color: rgb(221, 217, 217);
+  }
+  &__btn {
+    &:link,
+    &:visited {
+      margin-top: 2rem;
+      text-decoration: none;
+      background-color: #fff;
+      color: $color-violet;
+      padding: 2rem 5rem;
+      border-radius: 1000px;
+      width: 25rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-family: $font-display;
+      letter-spacing: 1.3px;
+      transition: all 0.2s;
+      @media only screen and (max-width: 56.25em) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    &:hover {
+      color: #fff;
+      background-color: $color-magneta;
+    }
+  }
+}
